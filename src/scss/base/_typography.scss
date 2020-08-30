@@ -1,0 +1,6 @@
+$PATH: "../fonts/";
+
+@font-face {
+    font-family: $primary-font;
+    src: url($PATH + "Dinar-One-Medium.otf");
+}

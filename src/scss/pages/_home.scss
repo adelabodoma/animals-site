@@ -1,0 +1,87 @@
+.main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 65px;
+    position: relative;
+    box-sizing: border-box;
+    font-family: $primary-font;
+
+    &__home {
+        background-image: url(../images/home-hero.png);
+
+        .menu {
+            list-style: none;
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+
+            &__item {
+                height: 78px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: skew(-32deg, 0deg);
+                cursor: pointer;
+
+                &-link {
+                    font-size: inherit;
+                    color: inherit;
+                    font-weight: bold;
+                    transform: skew(32deg,0deg);
+                }
+
+
+                &--1 {
+                    background-color: rgba($color-white, .9);
+                    color: $primary-color;
+                    width: 600px;
+                    font-size: 1.5rem;
+                    margin: 0 auto;
+                }
+
+                &--2 {
+                    background-color: rgba($primary-color, .9);
+                    color: $color-dark;
+                    width: 892px;
+                    font-size: 3rem;
+                }
+
+                &--3 {
+                    background-color: rgba($color-dark, .9);
+                    color: $color-white;
+                    width: 720px;
+                    font-size: 1.5rem;
+                    margin-right: auto;
+                }
+
+                &--4 {
+                    background-color: rgba($color-green, .9);
+                    color: $color-white;
+                    width: 672px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .links {
+            list-style: none;
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;  
+            padding-top: 200px;;
+            display: flex;
+            justify-content: space-between;
+
+            &__item {
+                width: 30.33%;
+            }
+
+            &__item-link {
+               color: $color-white;
+               font-size: 2rem;
+               text-align: center;
+            }
+        }
+    }
+}
