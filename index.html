@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=1920'>
     <title>Animals - Site Title</title>
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -12,30 +14,30 @@
     <main class="main main__home">
 
         <ul class="menu">
-            <li class="menu__item menu__item--1">
+            <li class="menu__item menu__item--1 wow slideInRight">
                 <a href="#" class="menu__item-link">موسوعة عالم</a>
             </li>
-            <li class="menu__item menu__item--2">
+            <li class="menu__item menu__item--2 wow slideInLeft">
                 <a href="#" class="menu__item-link">الحيوانات والطيور</a>
             </li>
-            <li class="menu__item menu__item--3">
+            <li class="menu__item menu__item--3 wow slideInRight">
                 <a href="#" class="menu__item-link">وسائر الدواب</a>
             </li>
-            <li class="menu__item menu__item--4">
+            <li class="menu__item menu__item--4 wow slideInDown">
                 <a href="#" class="menu__item-link">فى القران الكريم والسنة النبوية</a>
             </li>
         </ul>
 
         <ul class="links">
-            <li class="links__item">
+            <li class="links__item wow fadeInRightBig"  data-wow-delay=".5s">
                 <a href="#" class="links__item-link"> أسماء 
                     الحيوانات</a>
             </li>
-            <li class="links__item">
+            <li class="links__item wow fadeInDownBig"  data-wow-delay=".5s">
                 <a href="#" class="links__item-link">  التصنيف الموضوعي 
                     لعالم الحيوان </a>
             </li>
-            <li class="links__item">
+            <li class="links__item wow fadeInLeftBig"  data-wow-delay=".5s">
                 <a href="#" class="links__item-link"> التصنيف العلمي 
                     لعالم الحيوان</a>
             </li>
@@ -45,15 +47,15 @@
         <!-- Footer -->
         <div class="footer">
             <ul class="footer__items">
-                <li class="footer__item">
+                <li class="footer__item wow fadeInDownBig" data-wow-delay="1s">
                     <img src="assets/images/icon/home.png" alt="Home" class="footer__item-icon">
                     <span class="footer__item-label">الرئيسية</span>
                 </li>
-                <li class="footer__item footer__item--slides">
+                <li class="footer__item footer__item--slides wow slideInDown"  data-wow-delay="1s">
                     <img src="assets/images/icon/reload.png" alt="Slides Show" class="footer__item-icon">
                     <span class="footer__item-label">عرض تلقائي</span>
                 </li>
-                <li class="footer__item">
+                <li class="footer__item wow slideInRight"  data-wow-delay="1s">
                     <img src="assets/images/icon/lang.png" alt="Change Langauge" class="footer__item-icon">
                     <span class="footer__item-label">تغير اللغة</span>
                 </li>
@@ -61,5 +63,8 @@
         </div>
     </main>
     <!-- main container End -->
+
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>

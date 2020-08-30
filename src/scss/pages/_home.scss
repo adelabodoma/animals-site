@@ -60,6 +60,11 @@
                     color: $color-white;
                     width: 672px;
                     margin: 0 auto;
+                    transform: translate(-50px) skew(32deg, 0deg);
+
+                    & .menu__item-link {
+                        transform: skew(-32deg, 0deg)!important;
+                    }
                 }
             }
         }
