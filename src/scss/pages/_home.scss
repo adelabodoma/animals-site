@@ -6,9 +6,10 @@
     position: relative;
     box-sizing: border-box;
     font-family: $primary-font;
+    background-image: url(../images/home-hero.png);
 
     &__home {
-        background-image: url(../images/home-hero.png);
+        // background-image: url(../images/home-hero.png);
 
         .menu {
             list-style: none;
@@ -23,6 +24,7 @@
                 justify-content: center;
                 transform: skew(-32deg, 0deg);
                 cursor: pointer;
+                transition: all .5s ease-in-out;
 
                 &-link {
                     font-size: inherit;
@@ -65,6 +67,10 @@
                     & .menu__item-link {
                         transform: skew(-32deg, 0deg)!important;
                     }
+                }
+
+                &:hover {
+                    transform: translateX(-50px);
                 }
             }
         }

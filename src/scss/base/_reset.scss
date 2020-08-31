@@ -13,6 +13,12 @@
     -webkit-text-size-adjust: 100%; /* 2 */
     direction: rtl;
   }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
   
   /* Sections
      ========================================================================== */
@@ -58,6 +64,10 @@
     box-sizing: content-box; /* 1 */
     height: 0; /* 1 */
     overflow: visible; /* 2 */
+  }
+
+  ul {
+    list-style: none;
   }
   
   /**

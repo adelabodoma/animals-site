@@ -1,0 +1,81 @@
+.main__animal {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/home-hero.png);
+  
+    .animal {
+        display: flex;
+    }
+
+    .animal-info {
+        flex: 1;
+
+        &__title {
+            color: $color-grey;
+        }
+
+        &__tags {
+            height: 214px;
+            background-color: $color-grey-1;
+            border-radius: 100px;
+            padding-top: 37px;
+            padding-right: 67px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 67px;
+        }
+
+        &__tag {
+            font-size: 1.3rem;
+            width: 211px;
+            height: 57px;
+            background-color: $color-grey-2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        &__content {
+            width: 100%;
+            background-color: rgba($color-green-light, .9);
+            height: 464px;
+            border-radius: 70px;
+            padding: 67px;
+            line-height: 50px;
+            direction: ltr;
+            
+            .text {
+                overflow-y: auto;
+                height: 100%;
+                padding-right: 20px;
+                text-align: right;
+                @extend %scroll
+            }
+            
+        }
+    }
+
+    .animal-details {
+        width: 23%;
+
+        &__alternative-names {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        &__alternative-name {
+            width: 93px;
+            height: 44px;
+            border-radius: 20px;
+            background-color: $color-green-1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+
+    }
+}

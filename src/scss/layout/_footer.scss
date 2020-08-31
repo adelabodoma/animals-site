@@ -18,6 +18,7 @@
         align-items: center;
         color: $primary-color;
         cursor: pointer;
+        transition: all .5s ease-in-out;
 
         img {
             height: 50px;
@@ -27,6 +28,10 @@
         &--slides {
             margin-left: auto;
             margin-right: 100px;
+        }
+
+        &:hover {
+            transform: translateY(-20px);
         }
     }
 
