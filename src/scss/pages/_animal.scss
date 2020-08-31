@@ -1,5 +1,5 @@
 .main__animal {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/home-hero.png);
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/home-hero.png);
   
     .animal {
         display: flex;
@@ -10,11 +10,12 @@
 
         &__title {
             color: $color-grey;
+            font-size: 1.3rem;
         }
 
         &__tags {
             height: 214px;
-            background-color: $color-grey-1;
+            background-color: rgba($color-grey-1, .9);
             border-radius: 100px;
             padding-top: 37px;
             padding-right: 67px;
@@ -34,6 +35,12 @@
             justify-content: center;
             border-radius: 20px;
             cursor: pointer;
+            transition: all .5s ease-in-out;
+
+
+            &:hover {
+                transform: translateY(-20px);
+            }
         }
 
         &__content {
@@ -59,6 +66,18 @@
     .animal-details {
         width: 23%;
 
+        &__name {
+            border: 2px solid $primary-color-1;
+            cursor: not-allowed;
+            text-align: center;
+            padding: 16px;
+            width: 200px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: $primary-color-1;
+        }
+
         &__alternative-names {
           display: flex;
           flex-wrap: wrap;
@@ -75,6 +94,11 @@
             cursor: pointer;
             margin-bottom: 10px;
             margin-left: 5px;
+            transition: all .5s ease-in-out;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
         }
 
     }

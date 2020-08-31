@@ -1,0 +1,52 @@
+.main__animals-cat {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/home-hero.png);
+
+
+    .animals-cat {
+        width: 1555px;
+        height: 709px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+       
+        &__item {
+            height: 110px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            transition: all .5s ease-in-out;
+
+
+            &--small {
+                width: 330px;
+            }
+
+            &--large {
+                width: 400px
+            }
+
+            &--dark {
+                background-color: rgba($color-dark-1, .9);
+            }
+
+            &--green {
+                background-color: rgba($color-green-2, .9);
+            }
+
+            &--orange {
+                background-color: rgba($primary-color-2, .9);
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+    }
+}
