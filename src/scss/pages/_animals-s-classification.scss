@@ -1,0 +1,71 @@
+.main__animals-s-classification {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/hero.png);
+
+    .classification {
+        width: 1258px;
+        height: 550px;
+        margin: 0 auto;
+        margin-top: 100px;
+        text-align: center;
+
+
+        &__title {
+            font-size: 2rem;
+            border: 2px solid $primary-color-1;
+            cursor: pointer;
+            text-align: center;
+            padding: 16px;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+        &__lists {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+
+        &__list__item {
+            height: 108px;
+            border-radius: 15px;
+            background-color: rgba($color-white, .9);
+            width: 400px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.8rem;
+            cursor: pointer;
+            transition: left .5s ease-in-out;
+
+            &--1 {
+                transform: skew(33deg, 0deg);
+                color: $color-dark-2;
+
+                .text {
+                  transform: skew(-33deg, 0deg);
+                }
+            }
+
+            &--2 {
+               background-color: rgba($color-grey-2, .9);
+            }
+
+            &--3 {
+                background-color: rgba($color-green-2, .9);
+                transform: skew(-33deg, 0deg);
+
+                .text {
+                  transform: skew(33deg, 0deg);
+                }
+            }
+
+            &:hover {
+               position: relative;
+               bottom: -5px;
+            }
+
+        }
+    }
+}

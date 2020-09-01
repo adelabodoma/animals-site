@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAGI,+BAH2B,CAG3B,eAAe,AAAC,CACZ,KAAK,CAAE,MAAM,CACb,MAAM,CAAE,KAAK,CACb,MAAM,CAAE,MAAM,CACd,WAAW,CAAE,KAAK,CAClB,gBAAgB,CAAE,GAAG,CACxB",
+    "sources": [
+        "../../src/scss/pages/animals-s-classification.scss"
+    ],
+    "names": [],
+    "file": "animals-s-classification.css"
+}
