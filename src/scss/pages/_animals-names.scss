@@ -1,0 +1,178 @@
+.main__animals-names {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/hero.png);
+    text-align: center;
+
+    .title {
+        font-size: 2rem;
+        border: 2px solid $primary-color-1;
+        cursor: pointer;
+        text-align: center;
+        padding: 16px;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        width: 1513px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            width: 287px;
+            height: 438px;
+            background-color: rgba($color-white, .9);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+
+            &__img {
+                position: absolute;
+                right: -200px;
+                top: 30px;
+            }
+
+            &__name {
+                position: absolute;
+                bottom: 35px;
+                left: 45px;
+                font-size: 1.3rem;
+                margin: 0;
+            }
+
+
+            &--1 {
+
+            }
+            &--2 {
+                background-color: rgba($color-dark, .9);
+                img {
+                    right: -80px;
+                }
+            }
+            &--3 {
+                background-color: rgba($color-grey-3, .9);
+                img {
+                    right: -80px;
+                }
+            }
+            &--4 {
+                background-color: rgba($primary-color-1, .9);
+                img {
+                    right: -80px;
+                }  
+            }
+            &--5 {
+                img {
+                    right: -150px;
+                } 
+            }
+
+            &--6 {
+                background-color: rgba($primary-color-1, .9);
+                img {
+                    right: -200px;
+                } 
+            }
+
+            &--7 {
+                img {
+                    right: -50px;
+                } 
+            }
+
+            &--8 {
+                background-color: rgba($color-green-1, .9);
+                img {
+                    right: -180px;
+                } 
+            }
+
+            &--9 {
+                background-color: rgba($color-dark, .9);
+                img {
+                    right: -180px;
+                } 
+            }
+            &--10 {
+                background-color: rgba($color-grey-3, .9);
+                img {
+                    right: -150px;
+                } 
+            }
+        }
+    }
+
+
+
+
+    // Slider Style
+    #slider {
+        width: 1513px;
+        margin: 0 auto;
+    }
+
+    .slider-button {
+        position: absolute;
+        top: 45%;
+        display: flex;
+        flex-direction: column;
+
+        .top-arrow {
+            margin-bottom: 130px;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .footer {
+        .footer__item--slides {
+            margin-left: 100px;
+        }
+        .footer__item--sort {
+            margin-left: auto;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 30%;
+        left: -7%;
+
+        li button {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $color-grey;
+            margin-bottom: 30px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+        li.slick-active button {
+            width: 20px;
+            height: 20px;
+            background-color: $color-white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $color-green;
+            }
+        }
+
+    }
+
+}
