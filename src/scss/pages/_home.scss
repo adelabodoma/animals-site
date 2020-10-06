@@ -10,7 +10,7 @@
 
     &__home {
         // background-image: url(../images/home-hero.png);
-
+        transition: all .5s;
         .menu {
             list-style: none;
             width: 1000px;
@@ -25,12 +25,13 @@
                 transform: skew(-32deg, 0deg);
                 cursor: pointer;
                 transition: all .5s ease-in-out;
+                transform: translate(50px) skew(-32deg, 0deg);
 
                 &-link {
                     font-size: inherit;
                     color: inherit;
                     font-weight: bold;
-                    transform: skew(32deg,0deg);
+                    transition: all .5s;
                 }
 
 
@@ -65,12 +66,15 @@
                     transform: translate(-50px) skew(32deg, 0deg);
 
                     & .menu__item-link {
-                        transform: skew(-32deg, 0deg)!important;
+                        transform: skew(-50deg, 0deg) !important;
                     }
                 }
 
                 &:hover {
-                    transform: translateX(-50px);
+                    transform: skew(0deg,0deg);
+                    .menu__item-link {
+                        transform: skew(-32deg, 0deg)!important;
+                    }
                 }
             }
         }
@@ -80,18 +84,33 @@
             width: 1000px;
             margin: 0 auto;
             text-align: center;  
-            padding-top: 200px;;
             display: flex;
             justify-content: space-between;
-
+            justify-items: center;
+            position: absolute;
+            left: 200px;
+            bottom: 60px;
+            z-index: 9;
             &__item {
                 width: 30.33%;
+                transition: all .9s;
+                padding:20px;
+                background-color: rgba($color-dark, .9);
+                border-radius: 30px;
+
+                &:hover{
+                    transform: translateY(-20px);
+                }
+                &:hover .links__item-link{
+                    color:$primary-color-1;
+                }
             }
 
             &__item-link {
-               color: $color-white;
+                color: $color-white;
                font-size: 2rem;
                text-align: center;
+               display: inline-block;
             }
         }
     }
