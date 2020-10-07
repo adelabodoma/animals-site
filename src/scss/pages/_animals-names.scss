@@ -1,5 +1,6 @@
 .main__animals-names {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/hero.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/hero.png) no-repeat;
+    background-size: cover;
     text-align: center;
 
     .title {
@@ -8,9 +9,55 @@
         cursor: pointer;
         text-align: center;
         padding: 16px;
-        width: 40%;
+        width: 30%;
         margin: 0 auto;
         margin-bottom: 20px;
+        color:$primary-color-1;
+        position: relative;
+        &::after,
+        &::before {
+            content: " ";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            transition: all 1s;
+        }
+        &::before {
+            bottom: 25px;
+            right: 25px;
+            border-bottom: 4px solid $primary-color-1;
+            border-right: 4px solid $primary-color-1;
+        }
+        &::after {
+            top: 25px;
+            left: 25px;
+            border-top: 4px solid $primary-color-1;
+            border-left: 4px solid $primary-color-1;
+        }
+
+        &__name {
+            &::after,
+            &::before{
+                content: " ";
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                transition: all 1s;
+            }
+            &::after {
+                bottom: 25px;
+                left: 25px;
+                border-bottom: 4px solid $primary-color-1;
+                border-left: 4px solid $primary-color-1;
+            }
+            &::before {
+                top: 25px;
+                right: 25px;
+                border-top: 4px solid $primary-color-1;
+                border-right: 4px solid $primary-color-1;
+                border-radius: 2px;
+            }
+        }
     }
 
     .cards {
@@ -22,7 +69,7 @@
         .card {
             width: 287px;
             height: 438px;
-            background-color: rgba($color-white, .9);
+            background-color: rgba($color-white, 0.9);
             border-radius: 15px;
             overflow: hidden;
             position: relative;
@@ -34,7 +81,7 @@
                 position: absolute;
                 right: -200px;
                 top: 30px;
-                transition: all .5s ease-in-out;
+                transition: all 0.5s ease-in-out;
             }
 
             &__name {
@@ -45,65 +92,63 @@
                 margin: 0;
             }
 
-
             &--1 {
-
             }
             &--2 {
-                background-color: rgba($color-dark, .9);
+                background-color: rgba($color-dark, 0.9);
                 img {
                     right: -80px;
                 }
             }
             &--3 {
-                background-color: rgba($color-grey-3, .9);
+                background-color: rgba($color-grey-3, 0.9);
                 img {
                     right: -80px;
                 }
             }
             &--4 {
-                background-color: rgba($primary-color-1, .9);
+                background-color: rgba($primary-color-1, 0.9);
                 img {
                     right: -80px;
-                }  
+                }
             }
             &--5 {
                 img {
                     right: -150px;
-                } 
+                }
             }
 
             &--6 {
-                background-color: rgba($primary-color-1, .9);
+                background-color: rgba($primary-color-1, 0.9);
                 img {
                     right: -200px;
-                } 
+                }
             }
 
             &--7 {
                 img {
                     right: -50px;
-                } 
+                }
             }
 
             &--8 {
-                background-color: rgba($color-green-1, .9);
+                background-color: rgba($color-green-1, 0.9);
                 img {
                     right: -180px;
-                } 
+                }
             }
 
             &--9 {
-                background-color: rgba($color-dark, .9);
+                background-color: rgba($color-dark, 0.9);
                 img {
                     right: -180px;
-                } 
+                }
             }
             &--10 {
-                background-color: rgba($color-grey-3, .9);
+                background-color: rgba($color-grey-3, 0.9);
                 img {
                     right: -150px;
-                } 
+                }
             }
 
             &:hover img {
@@ -111,9 +156,6 @@
             }
         }
     }
-
-
-
 
     // Slider Style
     #slider {
@@ -177,7 +219,5 @@
                 background-color: $color-green;
             }
         }
-
     }
-
 }

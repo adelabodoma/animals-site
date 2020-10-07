@@ -1,5 +1,6 @@
 .main__animals-s-classification {
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/hero.png);
+    background-size:cover;
 
     .classification {
         width: 1258px;
@@ -26,6 +27,10 @@
            align-items: center;
         }
 
+        &__list{
+            padding: 0 !important;
+        }
+        
         &__list__item {
             height: 108px;
             border-radius: 15px;

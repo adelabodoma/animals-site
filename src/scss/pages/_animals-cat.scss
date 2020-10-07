@@ -1,52 +1,98 @@
 .main__animals-cat {
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/hero.png);
-
-
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.png) no-repeat;
+    background-size:cover;
     .animals-cat {
         width: 1555px;
         height: 709px;
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
 
-       
         &__item {
             height: 110px;
             border-radius: 15px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             font-size: 1.3rem;
             cursor: pointer;
             margin-left: 10px;
             margin-bottom: 10px;
-            transition: all .5s ease-in-out;
-
+            transition: all 0.5s ease-in-out;
 
             &--small {
                 width: 330px;
             }
 
             &--large {
-                width: 400px
+                width: 400px;
             }
 
             &--dark {
-                background-color: rgba($color-dark-1, .9);
+                background-color: rgba($color-dark-1, 0.9);
             }
 
             &--green {
-                background-color: rgba($color-green-2, .9);
+                background-color: rgba($color-green-2, 0.9);
             }
 
             &--orange {
-                background-color: rgba($primary-color-2, .9);
+                background-color: rgba($primary-color-2, 0.9);
             }
 
             &:hover {
                 transform: translateY(-5px);
             }
         }
-
     }
+}
+
+.title{
+    text-align: center;
+}
+.animals-cat .slick-slide {
+    width: 389px !important;
+}
+
+.animals-cat .slick-prev {
+    width: 51px;
+}
+
+.animals-cat .slick-next {
+    width: 51px;
+}
+
+.animals-cat .slick-list {
+    width: 100%;
+    background-color: rgba($color-white, 0.5);
+    border-radius: 10px;
+}
+
+.animals-cat .slick-track {
+    width: 7002px !important;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px 30px;
+}
+
+.animals-cat .slick-dots {
+    margin: 0 auto;
+    display: flex;
+    & > li {
+        padding: 5px;
+        & > button{
+            padding: 8px;
+            outline: none;
+            border-radius: 50%;
+            border:none
+        }
+    }
+}
+
+.animals-cat .slick-active > button{
+    border:solid 2px $color-white !important;
+    background-color: $primary-color-1;
+    outline: none;
 }
