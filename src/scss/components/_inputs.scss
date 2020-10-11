@@ -1,9 +1,28 @@
 .inputs{
-    width: 500px;
-    padding: 14px;
-    border-radius: 30px;
-    border: solid 2px $primary-color;
+    width: 600px;
+    padding:18px;
+    border-radius: 10px;
+    border: none;
     outline: none;
-    background-color: rgba($color-white,.7);
+    background-color: rgba($color-white,.9);
     color:$color-dark;
+
+    &::placeholder {
+        color: $color-dark;
+        opacity: 1; 
+        font-family: Arial, FontAwesome;
+        font-size: 1.3rem;
+      }
+      
+      :-ms-input-placeholder { 
+       color: $color-dark;
+       font-family: Arial, FontAwesome;
+       font-size: 1.3rem;
+      }
+      
+      ::-ms-input-placeholder { 
+       color: $color-dark;
+       font-family: Arial, FontAwesome;
+       font-size: 1.3rem;
+      }
 }
