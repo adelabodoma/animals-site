@@ -228,4 +228,14 @@
             }
         }
     }
+
+    .slick-active{
+        outline: none;
+    }
+    .card{
+        outline: none;
+    }
+    .cards >*:focus{
+        border:solid 5px rgba($color-white, 0.9) !important;
+    }
 }

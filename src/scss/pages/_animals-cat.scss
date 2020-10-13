@@ -1,6 +1,6 @@
 .main__animals-cat {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.png) no-repeat;
-    background-size:cover;
+    background-size: cover;
     .animals-cat {
         width: 1555px;
         height: 709px;
@@ -49,11 +49,71 @@
     }
 }
 
-.title{
-    text-align: center;
+.title {
+    font-size: 2rem;
+        // border: 2px solid $primary-color-1;
+        cursor: pointer;
+        text-align: center;
+        padding: 16px;
+        width: 35%;
+        margin: 0px auto;
+        margin-bottom: 50px;
+        color:$primary-color-1;
+        position: relative;
+        font-family: "Dinar-One-Medium";
+    &::after,
+    &::before {
+        content: " ";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        transition: all 1s;
+    }
+    &::before {
+        bottom: 25px;
+        right: 25px;
+        border-bottom: 4px solid $primary-color-1;
+        border-right: 4px solid $primary-color-1;
+    }
+    &::after {
+        top: 25px;
+        left: 25px;
+        border-top: 4px solid $primary-color-1;
+        border-left: 4px solid $primary-color-1;
+    }
+    &__name {
+        &::after,
+        &::before{
+            content: " ";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            transition: all 1s;
+        }
+        &::after {
+            bottom: 25px;
+            left: 25px;
+            border-bottom: 4px solid $primary-color-1;
+            border-left: 4px solid $primary-color-1;
+        }
+        &::before {
+            top: 25px;
+            right: 25px;
+            border-top: 4px solid $primary-color-1;
+            border-right: 4px solid $primary-color-1;
+            border-radius: 2px;
+        }
+    }
 }
 .animals-cat .slick-slide {
     width: 389px !important;
+
+    & > *:focus{
+        border:solid 3px rgba($color-white, 0.9)  !important;
+    }
+}
+.animals-cat__item{
+    outline: none !important;
 }
 
 .animals-cat .slick-prev {
@@ -82,17 +142,20 @@
     display: flex;
     & > li {
         padding: 5px;
-        & > button{
+        & > button {
             padding: 8px;
             outline: none;
             border-radius: 50%;
-            border:none
+            border: none;
         }
     }
 }
 
-.animals-cat .slick-active > button{
-    border:solid 2px $color-white !important;
-    background-color: $primary-color-1;
+.animals-cat .slick-active {
     outline: none;
+    & > button {
+        border: solid 2px $color-white !important;
+        background-color: $primary-color-1;
+        outline: none;
+    }
 }
