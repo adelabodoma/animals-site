@@ -1,6 +1,6 @@
 @import "../abstract/mixins";
 .main__animal {
-    background: linear-gradient(rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(40, 50, 78, 0.6));
     position: absolute;
     top:0;
     bottom: 0;
@@ -183,6 +183,7 @@
         &__alternative-names {
             display: flex;
             flex-wrap: wrap;
+            margin-right:5px;
         }
 
         &__alternative-name {
@@ -200,6 +201,29 @@
 
             &:hover {
                 transform: translateY(-5px);
+            }
+        }
+
+        &__others{
+            background-color: rgba(120,140,141,0.9);
+            width: 400px;
+            padding: 5px 0;
+            border-radius: 10px;
+        }
+
+        &__title-others{
+            padding: 0 50px; color:#bdc8c9;  
+            font-family: 'Dinar-One-Medium';
+            position: relative;
+            margin-bottom: 30px;
+            &::after{
+                content: '';
+                width:80px;
+                height:3px;
+                position: absolute;
+                bottom: -10px;
+                right: 50px;
+                background-color:$primary-color-1;
             }
         }
     }

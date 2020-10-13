@@ -1,9 +1,9 @@
 .main__animals-names {
     // background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/hero.png) no-repeat;
     // background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(40, 50, 78, 0.6));
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -18,7 +18,7 @@
         width: 30%;
         margin: 40px auto;
         margin-bottom: 20px;
-        color:$primary-color-1;
+        color: $primary-color-1;
         position: relative;
         font-family: "Dinar-One-Medium";
         &::after,
@@ -44,7 +44,7 @@
 
         &__name {
             &::after,
-            &::before{
+            &::before {
                 content: " ";
                 width: 20px;
                 height: 20px;
@@ -186,14 +186,14 @@
         }
     }
 
-    .footer {
-        .footer__item--slides {
-            margin-left: 100px;
-        }
-        .footer__item--sort {
-            margin-left: auto;
-        }
-    }
+    // .footer {
+    //     .footer__item--slides {
+    //         margin-left: 100px;
+    //     }
+    //     .footer__item--sort {
+    //         margin-left: auto;
+    //     }
+    // }
 
     .slick-dots {
         position: absolute;
@@ -229,13 +229,47 @@
         }
     }
 
-    .slick-active{
+    .slick-active {
         outline: none;
     }
-    .card{
+    .card {
         outline: none;
     }
-    .cards >*:focus{
-        border:solid 5px rgba($color-white, 0.9) !important;
+    .cards > *:focus {
+        border: solid 5px rgba($color-white, 0.9) !important;
+    }
+}
+
+.right-nav {
+    position: absolute;
+    right: 96px;
+    bottom: 175px;
+    &__title {
+        color: $primary-color;
+    }
+    &__item{
+        margin-bottom:30px;
+        transition: all .5s;
+        &:hover{
+            transform: translateY(-20px);
+        }
+    }
+
+    
+}
+
+.left-nav {
+    position: absolute;
+    left: 57px;
+    bottom: 196px;
+    &__title{
+        color: $primary-color;
+    }
+    &__item{
+        margin-bottom:30px;
+        transition: all .5s;
+        &:hover{
+            transform: translateY(-20px);
+        }
     }
 }

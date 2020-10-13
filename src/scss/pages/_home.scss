@@ -10,7 +10,7 @@
 
     &__home {
         // background-image: url(../images/home-hero.png);
-        transition: all .5s;
+        transition: all 0.5s;
         .menu {
             list-style: none;
             width: 1000px;
@@ -24,19 +24,18 @@
                 justify-content: center;
                 transform: skew(-32deg, 0deg);
                 cursor: pointer;
-                transition: all .5s ease-in-out;
+                transition: all 0.5s ease-in-out;
                 transform: translate(50px) skew(-32deg, 0deg);
 
                 &-link {
                     font-size: inherit;
                     color: inherit;
                     font-weight: bold;
-                    transition: all .5s;
+                    transition: all 0.5s;
                 }
 
-
                 &--1 {
-                    background-color: rgba($color-white, .9);
+                    background-color: rgba($color-white, 0.9);
                     color: $primary-color;
                     width: 600px;
                     font-size: 1.5rem;
@@ -44,14 +43,14 @@
                 }
 
                 &--2 {
-                    background-color: rgba($primary-color, .9);
+                    background-color: rgba($primary-color, 0.9);
                     color: $color-dark;
                     width: 892px;
                     font-size: 3rem;
                 }
 
                 &--3 {
-                    background-color: rgba($color-dark, .9);
+                    background-color: rgba($color-dark, 0.9);
                     color: $color-white;
                     width: 720px;
                     font-size: 1.5rem;
@@ -59,7 +58,7 @@
                 }
 
                 &--4 {
-                    background-color: rgba($color-green, .9);
+                    background-color: rgba($color-green, 0.9);
                     color: $color-white;
                     width: 672px;
                     margin: 0 auto;
@@ -71,9 +70,9 @@
                 }
 
                 &:hover {
-                    transform: skew(0deg,0deg);
+                    transform: skew(0deg, 0deg);
                     .menu__item-link {
-                        transform: skew(-32deg, 0deg)!important;
+                        transform: skew(-32deg, 0deg) !important;
                     }
                 }
             }
@@ -83,7 +82,7 @@
             list-style: none;
             width: 1000px;
             margin: 0 auto;
-            text-align: center;  
+            text-align: center;
             display: flex;
             justify-content: space-between;
             justify-items: center;
@@ -93,24 +92,27 @@
             z-index: 9;
             &__item {
                 width: 30.33%;
-                transition: all .9s;
-                padding:20px;
-                background-color: rgba($color-dark, .9);
+                transition: all 0.9s;
+                padding: 20px;
+                background-color: rgba($color-white, 0.9);
+
                 border-radius: 30px;
 
-                &:hover{
+                &:hover {
                     transform: translateY(-20px);
+                    background-color: $primary-color-1;
                 }
-                &:hover .links__item-link{
-                    color:$primary-color-1;
+                &:hover .links__item-link {
+                    color: $color-white;
                 }
             }
 
             &__item-link {
-                color: $color-white;
-               font-size: 2rem;
-               text-align: center;
-               display: inline-block;
+                color: $primary-color-1;
+                font-size: 2rem;
+                text-align: center;
+                display: inline-block;
+                transition: all .9s;
             }
         }
     }
