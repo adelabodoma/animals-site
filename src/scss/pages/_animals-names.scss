@@ -1,6 +1,12 @@
 .main__animals-names {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/hero.png) no-repeat;
-    background-size: cover;
+    // background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/hero.png) no-repeat;
+    // background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
 
     .title {
@@ -10,10 +16,11 @@
         text-align: center;
         padding: 16px;
         width: 30%;
-        margin: 0 auto;
+        margin: 40px auto;
         margin-bottom: 20px;
         color:$primary-color-1;
         position: relative;
+        font-family: "Dinar-One-Medium";
         &::after,
         &::before {
             content: " ";
@@ -168,6 +175,7 @@
         top: 45%;
         display: flex;
         flex-direction: column;
+        margin-right: 106px;
 
         .top-arrow {
             margin-bottom: 130px;

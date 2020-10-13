@@ -1,10 +1,13 @@
 @import "../abstract/mixins";
 .main__animal {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../../assets/images/home-hero.png) no-repeat;
-    background-size:cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top:0;
+    bottom: 0;
 
     .animal {
         display: flex;
+        margin:50px;
     }
 
     .animal-info {
